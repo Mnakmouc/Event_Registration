@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Event Registration</h1>
+        <p>Event registration is the essential first step for attendees to formally secure their participation in your gathering. It typically involves a dedicated form—hosted on a website, landing page, or within an email—where guests provide their contact details, make selections for ticket types or sessions, and often complete payment. A smooth registration process efficiently captures this vital information, providing attendees with immediate confirmation and necessary details, while simultaneously giving organizers a clear and organized view of their expected audience for streamlined planning and communication.</p>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Infos</legend>
+                <label for="name-input">Name *</label>
+                <input type="text" id="name-input" name="fname" placeholder="Enter your name" required><br><br>
+                <label for="email-input">Email *</label>
+                <input type="email" id="email-input" name="email" placeholder="Enter your email" required><br><br>
+                <label for="phone-input">Phone *</label>
+                <input type="tel" id="phone-input" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required><br><br>
+                <label for="address-input">Address *</label>
+                <input type="text" id="address-input" name="address" placeholder="Enter your Address" required><br><br>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Ticket Type</legend>
+                <label>Wich the ticket do you want ?</label>
+                <input type="radio" id="student-input" name="ticket" value="student">
+                <label for="student-input">Student</label>
+                <input type="radio" id="regular-input" name="ticket" value="regular">
+                <label for="regular-input">Regular</label>
+                <input type="radio" id="vip-input" name="ticket" value="vip">
+                <label for="vip-input">Vip</label>             
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Workshop</legend>
+                <label>Please select up to three workshops you would like to attend (check a maximum of three boxes):</label>
+                <input type="checkbox" id="ai-input" name="checkboxes[]" value="ai">
+                <label for="ai-input">Introduction to AI and Machine Learning</label>
+                <input type="checkbox" id="public-speaking-input" name="checkboxes[]" value="public_speaking">
+                <label for="public-speaking-input">Effective Public Speaking for Professionals</label>
+                <input type="checkbox" id="web-deveoppement-input" name="checkboxes[]" value="web_developpement">
+                <label for="web-deveoppement-input">Advanced Web Development Techniques</label>
+                <input type="checkbox" id="marketing-input" name="checkboxes[]" value="digitale_marketing">
+                <label for="marketing-input">Digital Marketing Fundamentals</label>
+                <input type="checkbox" id="management-input" name="checkboxes[]" value="management">
+                <label for="management-input">Project Management for Agile Teams</label>
+                <input type="checkbox" id="graphic-design-input" name="checkboxes[]" value="graphic-design">
+                <label for="graphic-design-input">Graphic Design with Free Tools</label>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Dietary restictions</legend>
+                <label>Please select all that apply from the list :</label>
+                <select name="restrictions">
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="gluten_Free">Gluten-Free</option>
+                    <option value="nut_allergy">Nut Allergy</option>
+                    <option value="halal">Halal</option>
+                    <option value="kosher">Kosher</option>
+                </select>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>T-shirt Size</legend>
+                <label>Please select your preferred size from the dropdown menu</label>
+                <select name="t-shirt_size">
+                    <option value="selection" disabled>Select your size</option>
+                    <option value="Large">L</option>
+                    <option value="medium">M</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                </select>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Accessibility requirements</legend>
+                <label>Do you want to ask any question ?</label>
+                <textarea name="question" placeholder="Enter your question here" rows="5" cols="40"></textarea>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Promo Code</legend>
+                <label for="promo_code-input">Promo code *</label>
+                <input type="password" name="promo_code" id="promo_code-input" placeholder="Enter your promo code" required>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Payment method</legend>
+                <label>what the method do you want to pay ?</label>
+                <input type="radio" name="payment" id="credit_card-input">
+                <label for="credit_card-input">Credit Card</label>
+                <input type="radio" name="payment" id="paypal-input">
+                <label for="paypal-input">Paypal</label>
+                <input type="radio" name="payment" id="bank_transfer-input">
+                <label for="bank_transfer-input">Bank Transfer</label>
+            </fieldset>
+            <hr>
+            <input type="submit">
+        </form>  
+    </main>
+</body>
+</html>
